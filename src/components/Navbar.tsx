@@ -5,11 +5,11 @@ import { Menu, X } from 'lucide-react';
 import { useTranslation } from "react-i18next";
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Projects', href: '/#projects' },
-  { name: 'About', href: '/about' },
-  { name: 'Skills', href: '/skills' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Home', href: '#home' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'About', href: '#about' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 const Navbar = () => {
@@ -47,28 +47,28 @@ const Navbar = () => {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link
-          to="/"
+        <a
+          href="/"
           className="text-xl md:text-2xl font-display font-semibold tracking-tight relative"
         >
           <span className="text-gradient">Gabriele Zito</span>
-        </Link>
+        </a>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           {navigation.map((item) => (
-            <Link
+            <a
               key={item.name}
-              to={item.href}
+              href={item.href}
               className={cn(
-                'font-medium text-sm transition-all duration-200 link-underline',
+                'font-medium text-sm transition-all duration-200 a-underline',
                 location.pathname + location.hash === item.href
                   ? 'text-accent'
                   : 'text-foreground/80 hover:text-foreground'
               )}
             >
               {item.name}
-            </Link>
+            </a>
           ))}
         </div>
 
