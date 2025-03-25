@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import i18n from './i18n.tsx';
 
 
-import Navbar from "./components/Navbar.tsx";
-import Footer from "./components/Footer.tsx";
 import Home from './Home.tsx';
 import ProjectDetail from './pages/ProjectDatail.tsx';
 import NotFound from './pages/NotFound.tsx';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
+import Education from './pages/Education.tsx';
 
 const App = () => {
 
@@ -33,15 +35,16 @@ const App = () => {
   return (
     <Router>
       <div className="min-h-screen">
-
+        <Navbar />
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/project" element={<ProjectDetail />} />
-            <Route path="*" element={<NotFound/>} />
+            <Route path="/education" element={<Education />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
-
+        <Footer />
       </div>
     </Router>
 

@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import { Button } from './ui/button.tsx';
 
 const roles = [
-  'Frontend Developer',
-  'UI/UX Enthusiast',
-  'React Specialist',
-  'Creative Coder',
-  'Web Designer'
+  'Innovative Frontend Expert',
+  'UX-Focused Coder',
+  'Intuitive Interface Creator',
+  'Creative Technologist',
+  'Modern Web Architect'
 ];
 
 function Hero(){

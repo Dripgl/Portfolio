@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from "../lib/utils.tsx";
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, GraduationCap } from 'lucide-react';
 import { Button } from './ui/button.tsx';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -76,28 +77,34 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground">
-              I'm a passionate frontend developer with 5+ years of experience crafting innovative web solutions. I specialize in building responsive, user-centric applications that solve real-world problems.
+              I'm a passionate frontend developer with 2+ years of experience crafting innovative web solutions. I specialize in building responsive, user-centric applications that solve real-world problems.
             </p>
-            
+            {/* CREA PAGINA ESTERNA CONTENENTE TUTTI I TUOI ATTESTATI */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-4">
               <div className="space-y-2">
                 <h3 className="text-lg font-medium">Education</h3>
                 <p className="text-muted-foreground">B.S. Computer Science, Stanford University</p>
+                <Link 
+                  to="/education" 
+                  className="inline-flex items-center text-sm text-accent hover:text-accent/80 font-medium mt-1"
+                >
+                  View all certificates <GraduationCap className="ml-1 h-4 w-4" />
+                </Link>
               </div>
               
               <div className="space-y-2">
                 <h3 className="text-lg font-medium">Location</h3>
-                <p className="text-muted-foreground">San Francisco, California</p>
+                <p className="text-muted-foreground">Catania, Italia</p>
               </div>
               
               <div className="space-y-2">
                 <h3 className="text-lg font-medium">Experience</h3>
-                <p className="text-muted-foreground">5+ Years Professional Experience</p>
+                <p className="text-muted-foreground">2+ Years Professional Experience</p>
               </div>
               
               <div className="space-y-2">
                 <h3 className="text-lg font-medium">Languages</h3>
-                <p className="text-muted-foreground">English (Native), Spanish (Fluent)</p>
+                <p className="text-muted-foreground">Italian (Native), English (Fluent)</p>
               </div>
             </div>
             

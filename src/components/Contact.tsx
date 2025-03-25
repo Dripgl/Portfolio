@@ -156,7 +156,7 @@ const Contact = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
                   <a href="mailto:hello@jhondoe.com" className="font-medium hover:text-accent transition-colors">
-                    hello@jhondoe.com
+                    devgabrielezito@gmail.com
                   </a>
                 </div>
               </div>
@@ -168,7 +168,7 @@ const Contact = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
                   <a href="tel:+15551234567" className="font-medium hover:text-accent transition-colors">
-                    +1 (555) 123-4567
+                   (+39) 329 436 9945
                   </a>
                 </div>
               </div>
@@ -178,7 +178,7 @@ const Contact = () => {
               <h4 className="text-lg font-medium mb-4">Find me on</h4>
               <div className="flex space-x-4">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/Dripgl" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-accent hover:bg-accent/10 transition-colors"
@@ -187,7 +187,7 @@ const Contact = () => {
                   <Github size={20} />
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/gabriele-zito-987452217/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-accent hover:bg-accent/10 transition-colors"

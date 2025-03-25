@@ -7,28 +7,28 @@ const skillsData = [
     category: 'Frontend Development',
     skills: [
       { name: 'HTML/CSS', proficiency: 95 },
-      { name: 'JavaScript/TypeScript', proficiency: 90 },
-      { name: 'React/Angular', proficiency: 92 },
-      { name: 'Redux', proficiency: 85 },
+      { name: 'JavaScript/TypeScript', proficiency: 80 },
+      { name: 'React', proficiency: 90 },
+      { name: 'Angular', proficiency: 85 },
       { name: 'Tailwind CSS', proficiency: 88 },
     ],
   },
   {
     category: 'UI/UX Design',
     skills: [
-      { name: 'Figma', proficiency: 85 },
-      { name: 'Adobe XD', proficiency: 80 },
+      { name: 'Figma', proficiency: 70 },
+      { name: 'Material', proficiency: 80 },
       { name: 'Responsive Design', proficiency: 90 },
-      { name: 'User Research', proficiency: 75 },
+      { name: 'User Research', proficiency: 85 },
     ],
   },
   {
     category: 'Tools & Platforms',
     skills: [
-      { name: 'Git/GitHub', proficiency: 90 },
-      { name: 'Webpack/Vite', proficiency: 85 },
-      { name: 'Jest/Testing Library', proficiency: 80 },
-      { name: 'CI/CD Pipelines', proficiency: 75 },
+      { name: 'Git/GitHub/GitLab', proficiency: 90 },
+      { name: 'Jhipster', proficiency: 70 },
+      { name: 'Swagger', proficiency: 70 },
+      { name: 'Docker', proficiency: 70 },
     ],
   },
 ];
