@@ -3,8 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
 import { Button } from '../components/ui/button.tsx';
 import { Separator } from '../components/ui/separator.tsx';
-import Navbar from '../components/Navbar.tsx';
-import Footer from '../components/Footer.tsx';
+
 
 interface Project {
   id: number;

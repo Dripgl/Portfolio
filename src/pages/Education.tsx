@@ -17,44 +17,44 @@ import {
 const certificates = [
     {
       id: 1,
-      name: "Full Stack Web Development",
+      name: "Angular Master",
       issuer: "Udemy",
-      date: "October 2023",
-      credentialId: "UC-123456789",
-      category: "web",
-      url: "https://www.udemy.com/certificate/example",
+      date: "February 2025",
+      credentialId: "UC-54412824-c64a-4ff9-bacd-cd4bda00060a",
+      category: "dev",
+      url: "https://udemy-certificate.s3.amazonaws.com/image/UC-54412824-c64a-4ff9-bacd-cd4bda00060a.jpg",
       description: "Comprehensive course covering modern web development technologies including React, Node.js, and MongoDB."
     },
     {
       id: 2,
-      name: "React and Redux Masterclass",
-      issuer: "Coursera",
-      date: "July 2023",
-      credentialId: "CERT-789012345",
-      category: "web",
-      url: "https://www.coursera.org/verify/example",
+      name: "Spring & SpringBoot",
+      issuer: "Udemy",
+      date: "February 2025",
+      credentialId: "UC-edbafbdd-d936-47f7-b672-7eb0d8fa5e7",
+      category: "dev",
+      url: "https://udemy-certificate.s3.amazonaws.com/image/UC-edbafbdd-d936-47f7-b672-7eb0dd8fa5e7.jpg",
       description: "Advanced course on React, Redux, and modern frontend architecture."
     },
-    {
-      id: 3,
-      name: "Data Science & Machine Learning",
-      issuer: "DataCamp",
-      date: "March 2023",
-      credentialId: "DC-345678912",
-      category: "data",
-      url: "https://www.datacamp.com/certificate/example",
-      description: "Comprehensive training on data analysis, visualization, and machine learning algorithms."
-    },
-    {
-      id: 4,
-      name: "Cloud Solutions Architecture",
-      issuer: "AWS Training",
-      date: "January 2023",
-      credentialId: "AWS-567890123",
-      category: "cloud",
-      url: "https://aws.training/certification/example",
-      description: "Professional certification for designing and implementing solutions on AWS cloud."
-    }
+    // {
+    //   id: 3,
+    //   name: "Data Science & Machine Learning",
+    //   issuer: "DataCamp",
+    //   date: "March 2023",
+    //   credentialId: "DC-345678912",
+    //   category: "data",
+    //   url: "https://www.datacamp.com/certificate/example",
+    //   description: "Comprehensive training on data analysis, visualization, and machine learning algorithms."
+    // },
+    // {
+    //   id: 4,
+    //   name: "Cloud Solutions Architecture",
+    //   issuer: "AWS Training",
+    //   date: "January 2023",
+    //   credentialId: "AWS-567890123",
+    //   category: "cloud",
+    //   url: "https://aws.training/certification/example",
+    //   description: "Professional certification for designing and implementing solutions on AWS cloud."
+    // }
   ];
   
   const Education = () => {

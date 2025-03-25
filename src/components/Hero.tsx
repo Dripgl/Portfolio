@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { Button } from './ui/button.tsx';
 
 const roles = [
@@ -57,15 +56,15 @@ function Hero(){
           
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate-slide-down" style={{ animationDelay: '0.9s', animationFillMode: 'forwards' }}>
             <Button asChild size="lg" className="rounded-full px-8 group">
-              <Link to="/#projects">
+              <a href="#projects">
                 View my work 
                 <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
+              </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full px-8">
-              <Link to="/#contact">
+              <a href="#contact">
                 Contact me
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
