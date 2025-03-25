@@ -4,7 +4,7 @@ import i18n from './i18n.tsx';
 
 
 import Home from './Home.tsx';
-import ProjectDetail from './pages/ProjectDatail.tsx';
+import ProjectDetail from "./pages/ProjectDatail.tsx";
 import NotFound from './pages/NotFound.tsx';
 import Navbar from './components/Navbar.tsx';
 import Footer from './components/Footer.tsx';
@@ -39,7 +39,7 @@ const App = () => {
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/project" element={<ProjectDetail />} />
+            <Route path="/project/:slug" element={<ProjectDetail />} />
             <Route path="/education" element={<Education />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

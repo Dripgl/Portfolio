@@ -151,27 +151,26 @@ const ProjectDetail = () => {
 
   return (
     <>
-      <Navbar />
       
       <main className="pt-24 px-6 md:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <Button asChild variant="outline" className="mb-6">
-              <Link to="/projects">
+              <Link to="/">
                 <ArrowLeft size={16} className="mr-2" />
                 Back to Projects
               </Link>
             </Button>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4 animate-slide-down opacity-0" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4 animate-slide-down" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
               {project.title}
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-6 max-w-3xl animate-slide-down opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+            <p className="text-xl text-muted-foreground mb-6 max-w-3xl animate-slide-down" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
               {project.fullDescription}
             </p>
             
-            <div className="flex flex-wrap gap-2 mb-8 animate-slide-down opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
+            <div className="flex flex-wrap gap-2 mb-8 animate-slide-down" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
               {project.tags.map((tag, index) => (
                 <span key={index} className="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-medium">
                   {tag}
@@ -181,7 +180,7 @@ const ProjectDetail = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            <div className="md:col-span-2 animate-scale-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+            <div className="md:col-span-2 animate-scale-in" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
               <div className="rounded-xl overflow-hidden aspect-video bg-secondary">
                 <img 
                   src={selectedImage} 
@@ -207,7 +206,7 @@ const ProjectDetail = () => {
               </div>
             </div>
             
-            <div className="glass-panel rounded-xl p-6 space-y-6 animate-slide-in-from-right opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
+            <div className="glass-panel rounded-xl p-6 space-y-6 animate-slide-in-from-right" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
               <div>
                 <h3 className="text-lg font-semibold mb-3">Technologies</h3>
                 <div className="flex flex-wrap gap-2">
@@ -247,23 +246,23 @@ const ProjectDetail = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
-            <div className="animate-slide-up opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+            <div className="animate-slide-up" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
               <h3 className="text-xl font-display font-semibold mb-4">The Challenge</h3>
               <p className="text-muted-foreground">{project.challenge}</p>
             </div>
             
-            <div className="animate-slide-up opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
+            <div className="animate-slide-up" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
               <h3 className="text-xl font-display font-semibold mb-4">The Solution</h3>
               <p className="text-muted-foreground">{project.solution}</p>
             </div>
             
-            <div className="animate-slide-up opacity-0" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
+            <div className="animate-slide-up" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
               <h3 className="text-xl font-display font-semibold mb-4">The Result</h3>
               <p className="text-muted-foreground">{project.result}</p>
             </div>
           </div>
           
-          <div className="text-center mb-20 animate-fade-in opacity-0" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
+          <div className="text-center mb-20 animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
             <h3 className="text-2xl font-display font-semibold mb-6">Interested in working together?</h3>
             <Button asChild size="lg" className="rounded-full px-8">
               <Link to="/#contact">
@@ -274,7 +273,6 @@ const ProjectDetail = () => {
         </div>
       </main>
       
-      <Footer />
     </>
   );
 };

@@ -99,12 +99,12 @@ const certificates = [
             </header>
             
             <Tabs defaultValue="all" className="mb-12">
-              <TabsList>
+              {/* <TabsList>
                 <TabsTrigger value="all" onClick={() => setFilter("all")}>All Certificates</TabsTrigger>
                 <TabsTrigger value="web" onClick={() => setFilter("web")}>Web Development</TabsTrigger>
                 <TabsTrigger value="data" onClick={() => setFilter("data")}>Data Science</TabsTrigger>
                 <TabsTrigger value="cloud" onClick={() => setFilter("cloud")}>Cloud Computing</TabsTrigger>
-              </TabsList>
+              </TabsList> */}
               
               <TabsContent value="all" className="mt-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
