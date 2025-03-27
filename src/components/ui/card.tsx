@@ -9,7 +9,7 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "rounded-lg border bg-card text-card-foreground shadow-sm",
+      "rounded-xl border bg-card text-card-foreground shadow-sm transition-all duration-500 hover:shadow-xl hover:-translate-y-1",
       className
     )}
     {...props}
@@ -23,7 +23,7 @@ const CardHeader = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex flex-col space-y-1.5 p-6", className)}
+    className={cn("flex flex-col space-y-1.5 p-6 relative", className)}
     {...props}
   />
 ))
@@ -36,7 +36,7 @@ const CardTitle = React.forwardRef<
   <h3
     ref={ref}
     className={cn(
-      "text-2xl font-semibold leading-none tracking-tight",
+      "text-2xl font-semibold leading-none tracking-tight transition-colors duration-300 ",
       className
     )}
     {...props}
@@ -70,10 +70,37 @@ const CardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("flex items-center p-6 pt-0", className)}
+    className={cn("flex items-center p-6 pt-0 z-10 relative", className)}
     {...props}
   />
 ))
 CardFooter.displayName = "CardFooter"
 
-export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent }
+const CardBanner = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn("h-24 w-full rounded-t-xl overflow-hidden", className)}
+    {...props}
+  />
+))
+CardBanner.displayName = "CardBanner"
+
+const CardAvatar = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn(
+      "w-20 h-20 rounded-full border-4 border-card bg-primary/10 flex items-center justify-center -mt-10 mx-auto relative z-10 overflow-hidden shadow-md transition-transform duration-300 group-hover:rotate-6",
+      className
+    )}
+    {...props}
+  />
+))
+CardAvatar.displayName = "CardAvatar"
+
+export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent, CardBanner, CardAvatar };
