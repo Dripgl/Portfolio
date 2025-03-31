@@ -125,7 +125,7 @@ const Projects = () => {
 
         <div className="text-center">
           <Button asChild variant="outline" className="rounded-full px-8">
-            <Link to="/projects">
+            <Link to="/project">
               View All Projects
               <ArrowRight size={16} className="ml-2" />
             </Link>

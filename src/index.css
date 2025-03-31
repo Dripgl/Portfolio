@@ -76,7 +76,7 @@
     /* @apply background text-foreground font-sans; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: hsl(var(--background));
+    background-color: transparent !important;
   }
 
   /* Custom scrollbar styling */
@@ -86,11 +86,11 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: hsl(var(--background));
+    background: transparent;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--muted-foreground) / 0.3);
+    background-color: transparent;
     border-radius: 6px;
   }
 
@@ -154,6 +154,10 @@
   
   .innovative-card:hover .card-avatar {
     transform: rotate(10deg);
+  }
+
+  canvas{
+    border: 2px solid red;
   }
 }
 

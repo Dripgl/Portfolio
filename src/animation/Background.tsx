@@ -17,7 +17,7 @@ const Particles = () => {
     return (
         <Points ref={pointsRef} scale={1.5}>
             <sphereGeometry args={[1.5, 64, 64]} />
-            <PointMaterial color="#ffffff" size={0.01} transparent opacity={0.8} />
+            <PointMaterial color="#000" size={0.01} transparent opacity={0.8} />
         </Points>
     );
 };

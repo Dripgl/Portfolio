@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound.tsx';
 import Navbar from './components/Navbar.tsx';
 import Footer from './components/Footer.tsx';
 import Education from './pages/Education.tsx';
+import Background from "./animation/Background.tsx"
 
 const App = () => {
 

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { cn } from "../lib/utils.tsx";
 import { Menu, X } from 'lucide-react';
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -15,20 +16,19 @@ const navigation = [
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
   const location = useLocation();
   const { i18n } = useTranslation();
 
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-  };
-
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+          setActiveSection(section.id);
+        }
+      });
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -38,6 +38,19 @@ const Navbar = () => {
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location]);
+
+  // Funzione per lo scroll smooth
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
+    e.preventDefault();
+    const section = document.querySelector(target);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 70, // Offset per la navbar
+        behavior: "smooth",
+      });
+      setActiveSection(target.replace("#", "")); // Setta la sezione attiva
+    }
+  };
 
   return (
     <nav
@@ -55,19 +68,29 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-8 relative">
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
+              onClick={(e) => handleSmoothScroll(e, item.href)}
               className={cn(
-                'font-medium text-sm transition-all duration-200 a-underline',
-                location.pathname + location.hash === item.href
+                'relative font-medium text-sm transition-all duration-200',
+                activeSection === item.href.replace("#", "")
                   ? 'text-accent'
                   : 'text-foreground/80 hover:text-foreground'
               )}
             >
               {item.name}
+              {activeSection === item.href.replace("#", "") && (
+                <motion.div
+                  layoutId="underline"
+                  className="absolute left-0 bottom-0 w-full h-0.5 bg-accent"
+                  initial={{ opacity: 0, scaleX: 0 }}
+                  animate={{ opacity: 1, scaleX: 1 }}
+                  transition={{ duration: 0.3 }}
+                />
+              )}
             </a>
           ))}
         </div>
@@ -98,44 +121,43 @@ const Navbar = () => {
           </button>
         </div>
 
-      {/* Mobile menu button */}
-      <button
-        className="md:hidden text-foreground"
-        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        aria-label="Toggle menu"
-      >
-        {mobileMenuOpen ? (
-          <X size={24} className="animate-fade-in" />
-        ) : (
-          <Menu size={24} className="animate-fade-in" />
-        )}
-      </button>
-    </div>
-
-      {/* Mobile menu */ }
-  {
-    mobileMenuOpen && (
-      <div className="md:hidden absolute top-full left-0 right-0 glass-panel animate-slide-down p-4">
-        <div className="flex flex-col space-y-4 py-2">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className={cn(
-                'px-3 py-2 rounded-md font-medium transition-colors duration-200',
-                location.pathname + location.hash === item.href
-                  ? 'text-accent bg-accent/10'
-                  : 'text-foreground/80 hover:text-foreground hover:bg-muted'
-              )}
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
+        {/* Mobile menu button */}
+        <button
+          className="md:hidden text-foreground"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {mobileMenuOpen ? (
+            <X size={24} className="animate-fade-in" />
+          ) : (
+            <Menu size={24} className="animate-fade-in" />
+          )}
+        </button>
       </div>
-    )
-  }
-    </nav >
+
+      {/* Mobile menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 right-0 glass-panel animate-slide-down p-4">
+          <div className="flex flex-col space-y-4 py-2">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                onClick={(e) => handleSmoothScroll(e, item.href)}
+                className={cn(
+                  'px-3 py-2 rounded-md font-medium transition-colors duration-200',
+                  activeSection === item.href.replace("#", "")
+                    ? 'text-accent bg-accent/10'
+                    : 'text-foreground/80 hover:text-foreground hover:bg-muted'
+                )}
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+    </nav>
   );
 };
 
