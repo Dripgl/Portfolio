@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { cn } from "../lib/utils.tsx";
 import { Menu, X } from 'lucide-react';
-import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import "../style/Navbar.css";
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -18,7 +18,6 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const location = useLocation();
-  const { i18n } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,7 +63,7 @@ const Navbar = () => {
           href="/"
           className="text-xl md:text-2xl font-display font-semibold tracking-tight relative"
         >
-          <span className="text-gradient">Gabriele Zito</span>
+          <span className="text-gradient nameNav">Gabriele Zito</span>
         </a>
 
         {/* Desktop Menu */}
@@ -75,7 +74,7 @@ const Navbar = () => {
               href={item.href}
               onClick={(e) => handleSmoothScroll(e, item.href)}
               className={cn(
-                'relative font-medium text-sm transition-all duration-200',
+                'relative font-medium text-sm transition-all duration-200 nameNav',
                 activeSection === item.href.replace("#", "")
                   ? 'text-accent'
                   : 'text-foreground/80 hover:text-foreground'
@@ -93,32 +92,6 @@ const Navbar = () => {
               )}
             </a>
           ))}
-        </div>
-
-        {/* Language Switcher */}
-        <div className="flex space-x-2 ml-4">
-          <button
-            className={cn(
-              "px-3 py-1 rounded-md text-sm font-medium transition-all duration-200",
-              i18n.language === "en"
-                ? "bg-accent text-white"
-                : "hover:bg-muted text-foreground/80"
-            )}
-            onClick={() => i18n.changeLanguage("en")}
-          >
-            🇬🇧 EN
-          </button>
-          <button
-            className={cn(
-              "px-3 py-1 rounded-md text-sm font-medium transition-all duration-200",
-              i18n.language === "it"
-                ? "bg-accent text-white"
-                : "hover:bg-muted text-foreground/80"
-            )}
-            onClick={() => i18n.changeLanguage("it")}
-          >
-            🇮🇹 IT
-          </button>
         </div>
 
         {/* Mobile menu button */}

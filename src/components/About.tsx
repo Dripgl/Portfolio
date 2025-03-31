@@ -83,7 +83,6 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-4">
               <div className="space-y-2">
                 <h3 className="text-lg font-medium">Education</h3>
-                <p className="text-muted-foreground">B.S. Computer Science, Stanford University</p>
                 <Link 
                   to="/education" 
                   className="inline-flex items-center text-sm text-accent hover:text-accent/80 font-medium mt-1"
@@ -110,8 +109,8 @@ const About = () => {
             
             <div className="pt-4">
               <Button asChild size="lg" className="rounded-full px-8 group">
-                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                  Download Resume
+                <a href="/contact" target="_blank" rel="noopener noreferrer">
+                  Contact Me
                   <ExternalLink size={16} className="ml-2" />
                 </a>
               </Button>

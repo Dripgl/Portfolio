@@ -25,36 +25,43 @@ const ParticlesContainer = () => {
     const options = useMemo(
         () => ({
             background: {
-                color: { value: "#080C1C" }, // Sfondo blu scuro
+                color: { value: "#A1A1A1" }, 
             },
             particles: {
-                color: { value: ["#ff6b6b", "#ffa726", "#42a5f5", "#26c6da"] }, // Colori vivaci
-                shape: {
-                    type: "circle",
+                color: { value: "#0D1117" }, 
+                links: {
+                    color: "#0D1117",
+                    distance: 100,
+                    enable: true,
+                    opacity: 0.6,
+                    width: 1.5,
                 },
                 move: {
                     enable: true,
                     speed: 1,
-                    direction: "top",
-                    random: false,
-                    straight: false,
+                    direction: "none",
+                    outModes: {
+                        default: "bounce",
+                    },
                 },
                 number: {
-                    value: 100,
+                    value: 50,
                 },
                 opacity: {
-                    value: { min: 0.1, max: 0.8 },
+                    value: 0.8,
+                },
+                shape: {
+                    type: "circle",
                 },
                 size: {
-                    value: { min: 2, max: 5 },
-                },
-                links: {
-                    enable: false,
+                    value: { min: 1, max: 3 },
                 },
             },
         }),
         []
     );
+
+
 
 
     if (init) {

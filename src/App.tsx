@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import i18n from './i18n.tsx';
 
 
 import Home from './Home.tsx';
