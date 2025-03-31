@@ -1,0 +1,9 @@
+.contactContainer{
+    background-color: white;
+}
+
+.connectSection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
