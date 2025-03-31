@@ -76,7 +76,7 @@
     /* @apply background text-foreground font-sans; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: transparent !important;
+    background-color: white !important;
   }
 
   /* Custom scrollbar styling */
@@ -86,11 +86,11 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: white;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: white;
     border-radius: 6px;
   }
 
@@ -156,9 +156,6 @@
     transform: rotate(10deg);
   }
 
-  canvas{
-    border: 2px solid red;
-  }
 }
 
 /* Add the Inter font */

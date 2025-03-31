@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Button } from './ui/button.tsx';
-import Parallax from '../animation/Parallax.tsx';
+// import Parallax from '../animation/Parallax.tsx';
 
 const roles = [
   'Innovative Frontend Expert',
@@ -30,7 +30,7 @@ function Hero() {
   }, []);
 
   return (
-    <Parallax>
+    // <Parallax>
       <section id="home" className="min-h-screen flex flex-col justify-center pt-20 px-6 md:px-10">
         <div className="max-w-7xl mx-auto w-full">
           <div className="space-y-8 md:space-y-10">
@@ -78,7 +78,7 @@ function Hero() {
           </div>
         </div>
       </section>
-    </Parallax>
+    // </Parallax>
 
   );
 };

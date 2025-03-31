@@ -42,7 +42,7 @@ const Navbar = () => {
   // Funzione per lo scroll smooth
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
     e.preventDefault();
-    const section = document.querySelector(target);
+    const section = document.querySelector(target) as HTMLElement;
     if (section) {
       window.scrollTo({
         top: section.offsetTop - 70, // Offset per la navbar

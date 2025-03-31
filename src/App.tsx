@@ -11,6 +11,7 @@ import Footer from './components/Footer.tsx';
 import Education from './pages/Education.tsx';
 import Background from "./animation/Background.tsx"
 
+
 const App = () => {
 
 
@@ -37,6 +38,7 @@ const App = () => {
     <Router>
       <div className="min-h-screen">
         <Navbar />
+        <Background/>
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
