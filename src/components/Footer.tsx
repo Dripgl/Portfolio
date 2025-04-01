@@ -16,7 +16,7 @@ const Footer = () => {
               <Link to="/" className="inline-block">
                 <h2 className="text-2xl font-display font-semibold text-gradient mb-4">Gabriele Zito</h2>
               </Link>
-              <p className="text-muted-foreground mb-6 max-w-md text-description">
+              <p className=" mb-6 max-w-md text-description">
                 Creating elegant, intuitive, and high-performance frontend solutions that solve real-world problems.
               </p>
               <div className="flex space-x-4">
@@ -24,7 +24,7 @@ const Footer = () => {
                   href="https://github.com/Dripgl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-accent transition-colors"
+                  className="hover:text-accent transition-colors"
                   aria-label="GitHub"
                 >
                   <Github size={20} />
@@ -33,20 +33,11 @@ const Footer = () => {
                   href="https://www.linkedin.com/in/gabriele-zito-987452217/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-accent transition-colors"
+                  className="hover:text-accent transition-colors"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={20} />
                 </a>
-                {/* CREA QUALCOSA CHE PERMETTA DI INVIARTI UNA MAIL IN AUTOMATICO CON INFORMAZIONI */}
-                <a
-                  href="mailto:devgabrielezito@gmail.com"
-                  className="text-muted-foreground hover:text-accent transition-colors"
-                  aria-label="Email"
-                >
-                  <Mail size={20} />
-                </a>
-                {/* AGGIUNGERE WHATSAPP WEB CON RICHIESTA AUTOMATICA DEL CLIENTE */}
                 <a
                   href={whatsappLink}
                   target="_blank"
@@ -107,12 +98,9 @@ const Footer = () => {
               © {currentYear} Gabriele Zito. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/privacy" className="text-sm hover:text-accent transition-colors">
-                Privacy Policy
-              </Link>
-              <Link to="/terms" className="text-sm hover:text-accent transition-colors">
-                Terms of Service
-              </Link>
+              <p className="text-sm hover:text-accent transition-colors text-description">
+                Thanks for whatching
+              </p>
             </div>
           </div>
         </div>
