@@ -17,7 +17,7 @@ const skillsData = [
     category: 'UI/UX Design',
     skills: [
       { name: 'Figma', proficiency: 70 },
-      { name: 'Material', proficiency: 80 },
+      { name: 'Material Ui', proficiency: 80 },
       { name: 'Responsive Design', proficiency: 90 },
       { name: 'User Research', proficiency: 85 },
     ],
@@ -29,6 +29,23 @@ const skillsData = [
       { name: 'Jhipster', proficiency: 70 },
       { name: 'Swagger', proficiency: 70 },
       { name: 'Docker', proficiency: 70 },
+    ],
+  },
+  {
+    category: 'Backend Developer',
+    skills: [
+      { name: 'Node.Js', proficiency: 80 },
+      { name: 'Spring', proficiency: 70 },
+      { name: 'Python', proficiency: 60 },
+      { name: 'C#/C++', proficiency: 60 },
+    ],
+  },
+  {
+    category: 'Sistemi Iot',
+    skills: [
+      { name: 'Arduino', proficiency: 90 },
+      { name: 'PLC', proficiency: 50 },
+      { name: 'Stampante 3D', proficiency: 70 },
     ],
   },
 ];

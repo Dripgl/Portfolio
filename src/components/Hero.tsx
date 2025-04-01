@@ -56,7 +56,7 @@ function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate-slide-down " style={{ animationDelay: '0.9s', animationFillMode: 'forwards' }}>
-            <Button asChild size="lg" className="px-6 py-2 font-sans font-semibold text-white transition duration-600 ease-in-out skew-x-30 bg-red-600 border-b-4 border-red-800 rounded-full shadow-lg shadow-red-600/50 hover:skew-x-6">
+            <Button asChild size="lg" className="px-6 py-2 font-sans font-semibold text-white transition duration-600 ease-in-out skew-x-30 bg-black border-b-4 border-white-800 rounded-full shadow-lg shadow-black-600/50 hover:skew-x-6">
               <a href="#projects">
                 View my work
                 <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
