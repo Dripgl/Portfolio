@@ -63,7 +63,7 @@ const Navbar = () => {
           href="/"
           className="text-xl md:text-2xl font-display font-semibold tracking-tight relative"
         >
-          <span className="text-gradient nameNav">Gabriele Zito</span>
+          <span className="text-gradient">Portfolio</span>
         </a>
 
         {/* Desktop Menu */}

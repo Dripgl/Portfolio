@@ -14,7 +14,7 @@ const Contact = () => {
             Get In Touch
           </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Contact Me</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg  max-w-2xl mx-auto text-description">
             Have a project in mind or want to discuss potential opportunities? I'd love to hear from you.
           </p>
         </div>
@@ -26,7 +26,7 @@ const Contact = () => {
         <div className="space-y-8 lg:pl-10 animate-slide-in-from-right" style={{ animationDelay: '0.4s' }}>
           <h3 className="text-2xl font-display font-semibold">Connect With Me</h3>
 
-          <p className="text-muted-foreground">
+          <p className=" text-description">
             Feel free to reach out through any of the following channels. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
 
@@ -36,7 +36,7 @@ const Contact = () => {
                 <Mail size={20} />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Email</p>
+                <p className="text-sm ">Email</p>
                 <a href="mailto:hello@jhondoe.com" className="font-medium hover:text-accent transition-colors">
                   devgabrielezito@gmail.com
                 </a>
@@ -48,7 +48,7 @@ const Contact = () => {
                 <Phone size={20} />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Phone</p>
+                <p className="text-sm ">Phone</p>
                 <a href="tel:+15551234567" className="font-medium hover:text-accent transition-colors">
                   (+39) 329 436 9945
                 </a>
@@ -63,7 +63,7 @@ const Contact = () => {
                 href="https://github.com/Dripgl"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-accent hover:bg-accent/10 transition-colors"
+                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center  hover:text-accent hover:bg-accent/10 transition-colors"
                 aria-label="GitHub"
               >
                 <Github size={20} />
@@ -72,7 +72,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/gabriele-zito-987452217/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-accent hover:bg-accent/10 transition-colors"
+                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center  hover:text-accent hover:bg-accent/10 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />

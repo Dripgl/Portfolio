@@ -15,6 +15,7 @@
 
     --primary: 240 5.9% 10%;
     --primary-foreground: 0 0% 98%;
+    --primary-border: 0 83% 34%;
 
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -22,14 +23,16 @@
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 219 96% 53%;
+    --accent: 0 100% 50%;
     --accent-foreground: 0 0% 98%;
+    --title: 216 28% 7%;
+    --description: 206 18% 43%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
+    --input: 216 98% 7%;
     --ring: 240 5.9% 10%;
 
     --radius: 0.5rem;
@@ -47,6 +50,7 @@
 
     --primary: 0 0% 98%;
     --primary-foreground: 240 5.9% 10%;
+    --primary-border: 0 83% 34%;
 
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -56,12 +60,14 @@
 
     --accent: 219 96% 53%;
     --accent-foreground: 0 0% 98%;
+    --title: 216 98% 7%;
+    --description: 206 18% 43%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --input: 216 98% 7%;
     --ring: 240 4.9% 83.9%;
   }
 }
@@ -101,8 +107,7 @@
 
 @layer components {
   .animate-text-shimmer {
-    @apply bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 
-           bg-[length:200%_auto] animate-[shimmer_2s_linear_infinite];
+    @apply bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-[length:200%_auto] animate-[shimmer_2s_linear_infinite];
   }
 
   .glass-panel {
@@ -124,22 +129,23 @@
   .link-underline {
     @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full;
   }
-   /* New innovative card styles */
-   .innovative-card {
+
+  /* New innovative card styles */
+  .innovative-card {
     @apply relative overflow-hidden rounded-xl transition-all duration-500 ease-out;
     box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .innovative-card:hover {
     box-shadow: 0 20px 60px -15px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
   }
-  
+
   .card-banner {
     @apply relative overflow-hidden;
     height: 100px;
   }
-  
+
   .card-avatar {
     @apply relative mx-auto flex items-center justify-center;
     margin-top: -40px;
@@ -151,11 +157,19 @@
     z-index: 10;
     transition: transform 0.3s ease;
   }
-  
+
   .innovative-card:hover .card-avatar {
     transform: rotate(10deg);
   }
 
+  .title {
+    color: hsl(var(--title));
+  }
+
+  .description {
+    color: hsl(var(--description)) !important;
+    font-weight: 500;
+  }
 }
 
 /* Add the Inter font */
@@ -163,11 +177,13 @@
 
 html {
   font-family: 'Inter', sans-serif;
+  color: #0d1117;
 }
 
 @supports (font-variation-settings: normal) {
   html {
     font-family: 'Inter var', sans-serif;
+    color: #0d1117;
   }
 }
 

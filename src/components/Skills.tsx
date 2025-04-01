@@ -103,7 +103,7 @@ const Skills = () => {
             My Expertise
           </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Technical Skills</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto text-description">
             I've honed my skills across various frontend technologies and design tools to create seamless user experiences.
           </p>
         </div>
@@ -124,7 +124,7 @@ const Skills = () => {
                   <div key={skillIndex} className="space-y-2">
                     <div className="flex justify-between items-center">
                       <p className="font-medium">{skill.name}</p>
-                      <span className="text-sm text-muted-foreground">{skillProgress[skill.name] || 0}%</span>
+                      <span className="text-sm">{skillProgress[skill.name] || 0}%</span>
                     </div>
                     <Progress 
                       value={skillProgress[skill.name] || 0} 

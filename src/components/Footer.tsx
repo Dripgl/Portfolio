@@ -16,7 +16,7 @@ const Footer = () => {
               <Link to="/" className="inline-block">
                 <h2 className="text-2xl font-display font-semibold text-gradient mb-4">Gabriele Zito</h2>
               </Link>
-              <p className="text-muted-foreground mb-6 max-w-md">
+              <p className="text-muted-foreground mb-6 max-w-md text-description">
                 Creating elegant, intuitive, and high-performance frontend solutions that solve real-world problems.
               </p>
               <div className="flex space-x-4">
@@ -62,27 +62,27 @@ const Footer = () => {
               <h3 className="text-lg font-medium mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#home" className="text-muted-foreground hover:text-accent transition-colors">
+                  <a href="#home" className= "hover:text-accent transition-colors text-description">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#projects" className="text-muted-foreground hover:text-accent transition-colors">
+                  <a href="#projects" className= "hover:text-accent transition-colors text-description">
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a href="#about" className="text-muted-foreground hover:text-accent transition-colors">
+                  <a href="#about" className= "hover:text-accent transition-colors text-description">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="#skills" className="text-muted-foreground hover:text-accent transition-colors">
+                  <a href="#skills" className= "hover:text-accent transition-colors text-description">
                     Skills
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="text-muted-foreground hover:text-accent transition-colors">
+                  <a href="#contact" className= "hover:text-accent transition-colors text-description">
                     Contact
                   </a>
                 </li>
@@ -91,7 +91,7 @@ const Footer = () => {
 
             <div>
               <h3 className="text-lg font-medium mb-4">Contact</h3>
-              <address className="not-italic text-muted-foreground space-y-2">
+              <address className="not-italic space-y-2 text-description">
                 <p>Mascalucia, CT</p>
                 <p>Italia</p>
                 <a href="mailto:hello@jhondoe.com" className="hover:text-accent transition-colors">
@@ -103,14 +103,14 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-border/50 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-description">
               © {currentYear} Gabriele Zito. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/privacy" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+              <Link to="/privacy" className="text-sm hover:text-accent transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+              <Link to="/terms" className="text-sm hover:text-accent transition-colors">
                 Terms of Service
               </Link>
             </div>

@@ -76,7 +76,7 @@ const About = () => {
               Creating exceptional <span className="text-gradient">digital experiences</span>
             </h2>
             
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground text-description">
               I'm a passionate frontend developer with 2+ years of experience crafting innovative web solutions. I specialize in building responsive, user-centric applications that solve real-world problems.
             </p>
             {/* CREA PAGINA ESTERNA CONTENENTE TUTTI I TUOI ATTESTATI */}
@@ -85,7 +85,7 @@ const About = () => {
                 <h3 className="text-lg font-medium">Education</h3>
                 <Link 
                   to="/education" 
-                  className="inline-flex items-center text-sm text-accent hover:text-accent/80 font-medium mt-1"
+                  className="inline-flex items-center text-sm hover:text-accent/80 font-medium mt-1"
                 >
                   View all certificates <GraduationCap className="ml-1 h-4 w-4" />
                 </Link>
@@ -93,17 +93,17 @@ const About = () => {
               
               <div className="space-y-2">
                 <h3 className="text-lg font-medium">Location</h3>
-                <p className="text-muted-foreground">Catania, Italia</p>
+                <p className="text-muted-foreground text-description">Catania, Italia</p>
               </div>
               
               <div className="space-y-2">
                 <h3 className="text-lg font-medium">Experience</h3>
-                <p className="text-muted-foreground">2+ Years Professional Experience</p>
+                <p className="text-muted-foreground text-description">2+ Years Professional Experience</p>
               </div>
               
               <div className="space-y-2">
                 <h3 className="text-lg font-medium">Languages</h3>
-                <p className="text-muted-foreground">Italian (Native), English (Fluent)</p>
+                <p className="text-muted-foreground text-description">Italian (Native), English (Fluent)</p>
               </div>
             </div>
             

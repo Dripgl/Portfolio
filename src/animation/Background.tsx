@@ -25,12 +25,12 @@ const ParticlesContainer = () => {
     const options = useMemo(
         () => ({
             background: {
-                color: { value: "#A1A1A1" }, 
+                color: { value: "#d3d4d9" }, 
             },
             particles: {
-                color: { value: "#0D1117" }, 
+                color: { value: "#7721b0" }, 
                 links: {
-                    color: "#0D1117",
+                    color: "#7721b0",
                     distance: 100,
                     enable: true,
                     opacity: 0.6,

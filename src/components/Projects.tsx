@@ -75,7 +75,7 @@ const Projects = () => {
             My Work
           </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Featured Projects</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto text-description">
             A selection of my recent work showcasing my skills and expertise in frontend development.
           </p>
         </div>
@@ -102,7 +102,7 @@ const Projects = () => {
                 <div className="project-overlay">
                   <div className="space-y-3">
                     <h3 className="text-2xl font-display font-semibold">{project.title}</h3>
-                    <p className="text-muted-foreground line-clamp-2">{project.description}</p>
+                    <p className="line-clamp-2">{project.description}</p>
                     <div className="flex flex-wrap gap-2 mt-2">
                       {project.tags.map((tag, index) => (
                         <span key={index} className="text-xs font-medium bg-secondary text-secondary-foreground px-2.5 py-1 rounded-full">
