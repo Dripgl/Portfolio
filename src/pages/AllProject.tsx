@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
-import { Button } from './ui/button.tsx';
+import { ArrowRight, Send } from 'lucide-react';
+import { Button } from '../components/ui/button.tsx';
 import { cn } from "../lib/utils.tsx";
 
 
@@ -37,10 +37,26 @@ const projects = [
     tags: ['React', 'Socket.io', 'Express', 'MongoDB'],
     image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
     slug: 'social-media'
+  },
+  {
+    id: 5,
+    title: 'Social Media Platform',
+    description: 'A modern social networking application with real-time messaging and news feed.',
+    tags: ['React', 'Socket.io', 'Express', 'MongoDB'],
+    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
+    slug: 'social-media'
+  },
+  {
+    id: 6,
+    title: 'Social Media Platform',
+    description: 'A modern social networking application with real-time messaging and news feed.',
+    tags: ['React', 'Socket.io', 'Express', 'MongoDB'],
+    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
+    slug: 'social-media'
   }
 ];
 
-const Projects = () => {
+const AllProjects = () => {
   const [visibleProjects, setVisibleProjects] = useState<number[]>([]);
 
   useEffect(() => {
@@ -69,7 +85,7 @@ const Projects = () => {
   }, [visibleProjects]);
 
   return (
-    <section id="projects" className="py-20 px-6 md:px-10">
+    <section id="work" className="py-20 px-6 md:px-10">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-block rounded-full px-3 py-1 text-sm font-medium bg-accent/10 text-accent mb-4">
@@ -127,8 +143,8 @@ const Projects = () => {
         <div className="text-center">
           <Button variant="outline" size="lg" className="rounded-full px-10 border-2 border-black relative group overflow-clip transition-all hover:scale-up-center">
             <div className="bg-sample w-full h-full flex flex-row justify-center items-center">
-              <a href="/work">View All Projects</a> 
-              <ArrowRight size={16} className="ml-2" />
+              <a href="/contact">Send a Message</a> 
+              <Send size={20} className="ml-2" />
             </div>
             <div className="transition-all ease-out bg-red-600 opacity-40 absolute w-[20px] h-[60px] -top-2 -skew-x-12 -translate-x-8 group-hover:translate-x-28"></div>
           </Button>
@@ -138,4 +154,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default AllProjects;

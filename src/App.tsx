@@ -9,6 +9,7 @@ import Navbar from './components/Navbar.tsx';
 import Footer from './components/Footer.tsx';
 import Education from './pages/Education.tsx';
 import Background from "./animation/Background.tsx"
+import AllProjects from './pages/AllProject.tsx';
 
 
 const App = () => {
@@ -43,6 +44,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/project/:slug" element={<ProjectDetail />} />
             <Route path="/education" element={<Education />} />
+            <Route path="/work" element={<AllProjects />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
