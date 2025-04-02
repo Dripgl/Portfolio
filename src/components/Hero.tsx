@@ -64,7 +64,7 @@ function Hero() {
             </Button>
             <Button variant="outline" size="lg" className="rounded-full px-8 border-2 border-black relative group overflow-clip transition-all hover:scale-up-center">
               <div className="bg-sample w-full h-full flex flex-col justify-center">
-                <a>Contact me</a>
+                <a href='#contact'>Contact me</a>
               </div>
               <div className="transition-all ease-out bg-red-600 opacity-40 absolute w-[20px] h-[60px] -top-2 -skew-x-12 -translate-x-8 group-hover:translate-x-28"></div>
             </Button>

@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from './ui/button.tsx';
 import { cn } from "../lib/utils.tsx";
 
+
 const projects = [
   {
     id: 1,
@@ -82,17 +83,17 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {projects.map((project) => (
-            <div 
+            <div
               key={project.id}
               className="project-item"
               data-project-id={project.id}
             >
-              <div 
+              <div
                 className={cn(
                   "project-card h-[400px] group",
                   visibleProjects.includes(project.id) ? "animate-scale-in" : "opacity-0"
                 )}
-                style={{ 
+                style={{
                   backgroundImage: `url(${project.image})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
@@ -124,11 +125,12 @@ const Projects = () => {
         </div>
 
         <div className="text-center">
-          <Button asChild variant="outline" className="rounded-full px-8">
-            <Link to="/project">
-              View All Projects
+          <Button variant="outline" size="lg" className="rounded-full px-10 border-2 border-black relative group overflow-clip transition-all hover:scale-up-center">
+            <div className="bg-sample w-full h-full flex flex-row justify-center items-center">
+              <a href="/project">View All Projects</a> 
               <ArrowRight size={16} className="ml-2" />
-            </Link>
+            </div>
+            <div className="transition-all ease-out bg-red-600 opacity-40 absolute w-[20px] h-[60px] -top-2 -skew-x-12 -translate-x-8 group-hover:translate-x-28"></div>
           </Button>
         </div>
       </div>
