@@ -45,7 +45,17 @@ const skillsData = [
     skills: [
       { name: 'Arduino', proficiency: 90 },
       { name: 'PLC', proficiency: 50 },
-      { name: 'Stampante 3D', proficiency: 70 },
+      // { name: 'Stampante 3D', proficiency: 70 },
+    ],
+  },
+  {
+    category: 'Soft Skills',
+    skills: [
+      { name: 'Problem Solving', proficiency: 90 },
+      { name: 'Time Management', proficiency: 80 },
+      { name: 'Leadership', proficiency: 90 },
+      { name: 'Critical Thinking', proficiency: 78 },
+      { name: 'Adaptability', proficiency: 90 },
     ],
   },
 ];

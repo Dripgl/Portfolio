@@ -4,7 +4,7 @@ import Calendar from './Calendar.tsx';
 
 
 const Contact = () => {
- 
+
 
   return (
     <section id="contact" className="py-20 px-6 md:px-10 bg-secondary/50">
@@ -20,63 +20,68 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <Calendar/>
-        </div>
 
-        <div className="space-y-8 lg:pl-10 animate-slide-in-from-right" style={{ animationDelay: '0.4s' }}>
-          <h3 className="text-2xl font-display font-semibold">Connect With Me</h3>
-
-          <p className=" text-description">
-            Feel free to reach out through any of the following channels. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-          </p>
-
-          <div className="space-y-5">
-            <div className="flex items-center">
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent mr-4">
-                <Mail size={20} />
-              </div>
-              <div>
-                <p className="text-sm ">Email</p>
-                <a href="mailto:hello@jhondoe.com" className="font-medium hover:text-accent transition-colors">
-                  devgabrielezito@gmail.com
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-center">
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent mr-4">
-                <Phone size={20} />
-              </div>
-              <div>
-                <p className="text-sm ">Phone</p>
-                <a href="tel:+15551234567" className="font-medium hover:text-accent transition-colors">
-                  (+39) 329 436 9945
-                </a>
-              </div>
-            </div>
+          <div className="flex justify-center lg:justify-start">
+            <Calendar />
           </div>
 
-          <div className="pt-6">
-            <h4 className="text-lg font-medium mb-4">Find me on</h4>
-            <div className="flex space-x-4">
-              <a
-                href="https://github.com/Dripgl"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center  hover:text-accent hover:bg-accent/10 transition-colors"
-                aria-label="GitHub"
-              >
-                <Github size={20} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/gabriele-zito-987452217/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center  hover:text-accent hover:bg-accent/10 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={20} />
-              </a>
+
+
+          <div className="space-y-8 lg:pl-10 animate-slide-in-from-right" style={{ animationDelay: '0.4s' }}>
+            <h3 className="text-2xl font-display font-semibold">Connect With Me</h3>
+
+            <p className=" text-description">
+              Feel free to reach out through any of the following channels. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            </p>
+
+            <div className="space-y-5">
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent mr-4">
+                  <Mail size={20} />
+                </div>
+                <div>
+                  <p className="text-sm ">Email</p>
+                  <a href="mailto:hello@jhondoe.com" className="font-medium hover:text-accent transition-colors">
+                    devgabrielezito@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent mr-4">
+                  <Phone size={20} />
+                </div>
+                <div>
+                  <p className="text-sm ">Phone</p>
+                  <a href="tel:+15551234567" className="font-medium hover:text-accent transition-colors">
+                    (+39) 329 436 9945
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-6">
+              <h4 className="text-lg font-medium mb-4">Find me on</h4>
+              <div className="flex space-x-4">
+                <a
+                  href="https://github.com/Dripgl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center  hover:text-accent hover:bg-accent/10 transition-colors"
+                  aria-label="GitHub"
+                >
+                  <Github size={20} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/gabriele-zito-987452217/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center  hover:text-accent hover:bg-accent/10 transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin size={20} />
+                </a>
+              </div>
             </div>
           </div>
         </div>

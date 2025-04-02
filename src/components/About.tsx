@@ -57,7 +57,7 @@ const About = () => {
 
             <div className="absolute -bottom-6 -right-6 glass-panel rounded-2xl p-6 shadow-lg max-w-[280px] hidden lg:block">
               <p className="text-sm font-medium">
-                "I believe that the best digital experiences are both beautiful and functional, with attention to the smallest details."
+                "I believe there is no greater satisfaction than being able to turn a client's dream into reality."
               </p>
             </div>
           </div>
