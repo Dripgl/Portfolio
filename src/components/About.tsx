@@ -3,6 +3,7 @@ import { cn } from "../lib/utils.tsx";
 import { MessageCircle, GraduationCap } from 'lucide-react';
 import { Button } from './ui/button.tsx';
 import { Link } from 'react-router-dom';
+import ProfiloSito from "../asset/ProfiloSito.jpg";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -49,7 +50,7 @@ const About = () => {
           >
             <div className="aspect-square max-w-md mx-auto lg:mx-0 rounded-3xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+                src={ProfiloSito}
                 alt="John Doe"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />

@@ -2,8 +2,16 @@
     background-color: white;
 }
 
-.connectSection{
+.text_social{
+    display: flex;
+    align-items: left;
+    flex-direction: left;
+}
+
+.contact_info{
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
 }

@@ -4,6 +4,15 @@ import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
 import { Button } from '../components/ui/button.tsx';
 import { Separator } from '../components/ui/separator.tsx';
 
+import FiveMdf from "../asset/Mdf/FiveMdf.png";
+import FourMdf from "../asset/Mdf/FourMdf.png";
+import ThreeMdf from "../asset/Mdf/ThreeMdf.png";
+import SecondMdf from "../asset/Mdf/SecondMdf.png";
+
+import FirstSm from "../asset/Semete/FirstSm.png";
+import SecondSm from "../asset/Semete/SecondSm.png";
+import ThirdSm from "../asset/Semete/ThirdSm.png";
+
 
 interface Project {
   id: number;
@@ -25,43 +34,43 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: 'E-commerce Dashboard',
-    description: 'A comprehensive dashboard for managing online stores with analytics and inventory tracking.',
+    title: 'MDF Incentives',
+    description: 'Led frontend development using React, MaterialUI, and Figma mockups. Integrated with a JHipster + Spring Boot backend to deliver a custom booking platform for high-end private events',
     fullDescription: 'A sophisticated e-commerce dashboard that provides store owners with real-time analytics, inventory management, and customer insights. Built with React and TypeScript, with a focus on performance and usability.',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Recharts'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
+    image: ThreeMdf,
     gallery: [
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop',
+      FiveMdf,
+      FourMdf,
+      SecondMdf,
     ],
-    technologies: ['React', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS', 'Recharts', 'Firebase', 'Vite'],
-    challenge: 'The client needed a modern dashboard to replace their outdated system. The main challenges included handling large datasets without performance issues, creating intuitive visualizations for complex data, and ensuring mobile responsiveness.',
-    solution: 'I designed and developed a custom dashboard with optimized data handling using React Query, created interactive charts with Recharts, and implemented a responsive design system with Tailwind CSS that works seamlessly across all devices.',
-    result: 'The new dashboard increased the client\'s operational efficiency by 45%, reduced data processing time by 60%, and improved user satisfaction scores from 6.5 to 9.2 out of 10.',
-    liveLink: 'https://example.com/ecommerce-dashboard',
-    repoLink: 'https://github.com/johndoe/ecommerce-dashboard',
-    slug: 'ecommerce-dashboard'
+    technologies: ['React', 'Figma', 'Tailwind CSS'],
+    challenge: 'The client needed a modern showcase site that reflected his elegance and luxury events and allowed him to increase his social media traffic to increase events',
+    solution: 'I designed and developed with the Design Team, an structured site that we felt best reflected the client identity using the maximum budget ceiling requested at the first interview',
+    result: 'The new site allowed the client to increase the publicity of her work and put her fantastic work within reach of everyone. With the new site, she increased traffic on her website by 40% in the first four months compared to what she had before.',
+    liveLink: 'https://www.mdfincentives.com/',
+    repoLink: 'https://github.com/Dripgl/LuxuryEvents',
+    slug: 'MDF Incentives'
   },
   {
     id: 2,
-    title: 'Task Management App',
+    title: 'Se.Me.Te Srl',
     description: 'A beautiful and intuitive task management application with drag-and-drop functionality.',
     fullDescription: 'A feature-rich task management application that helps users organize their work with intuitive drag-and-drop functionality, custom labels, priority settings, and deadline reminders.',
-    tags: ['React', 'Redux', 'Node.js', 'MongoDB'],
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop',
+    tags: ['React', 'Node.js', 'Spring'],
+    image: FirstSm,
     gallery: [
-      'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1540350394557-8d14678e7f91?q=80&w=2032&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=1839&auto=format&fit=crop',
+      FirstSm,
+      SecondSm,
+      ThirdSm,
     ],
-    technologies: ['React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'React Beautiful DnD'],
+    technologies: ['React', 'Node.js', 'Spring', 'Figma'],
     challenge: 'Building a task management system that feels natural and intuitive while handling real-time updates and synchronization across multiple devices. Ensuring smooth drag-and-drop functionality was particularly challenging.',
     solution: 'I implemented React Beautiful DnD for the drag-and-drop interface, used Socket.io for real-time updates, and designed a responsive UI that adapts to different screen sizes while maintaining usability.',
     result: 'The application has garnered over 5,000 active users within the first three months, with a 4.8/5 rating on the app store. Users particularly appreciate the intuitive design and real-time synchronization features.',
     liveLink: 'https://example.com/task-manager',
     repoLink: 'https://github.com/johndoe/task-manager',
-    slug: 'task-management'
+    slug: 'semete'
   },
   {
     id: 3,
@@ -95,7 +104,7 @@ const projectsData: Project[] = [
       'https://images.unsplash.com/photo-1633439708729-aa5e3cc95418?q=80&w=1974&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1573152143286-0c422b4d2175?q=80&w=2070&auto=format&fit=crop',
     ],
-    technologies: ['React', 'Redux', 'Socket.io', 'Express', 'MongoDB', 'AWS S3', 'WebRTC'],
+    technologies: ['React', 'Socket.io', 'Express', 'MongoDB', 'AWS S3', 'WebRTC'],
     challenge: 'Building a scalable social platform with real-time features that can handle high traffic and multimedia content. Managing user authentication, privacy controls, and content moderation presented significant technical challenges.',
     solution: 'I designed a microservices architecture for scalability, implemented real-time features with Socket.io, and used AWS S3 for efficient media storage and delivery. I also developed a custom moderation system to maintain platform integrity.',
     result: 'The platform has grown to 50,000+ active users with minimal performance issues. The real-time messaging system has been particularly successful, with users sending over 1 million messages daily.',

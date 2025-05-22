@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Github, Linkedin, Mail, Phone } from 'lucide-react';
-// import Calendar from './Calendar.tsx';
+import "../style/Contact.css";
 
 
 const Contact = () => {
@@ -17,30 +17,19 @@ const Contact = () => {
           <p className="text-lg  max-w-2xl mx-auto text-description">
             Have a project in mind or want to discuss potential opportunities? I'd love to hear from you.
           </p>
-        </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <p className="text-lg  max-w-2xl mx-auto text-description">
+            Feel free to reach out through any of the following channels. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+          </p>
 
-          <div className="flex justify-center lg:justify-start">
-            {/* <Calendar /> */}
-          </div>
-
-
-
-          <div className="space-y-8 lg:pl-10 animate-slide-in-from-right" style={{ animationDelay: '0.4s' }}>
-            <h3 className="text-2xl font-display font-semibold">Connect With Me</h3>
-
-            <p className=" text-description">
-              Feel free to reach out through any of the following channels. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-            </p>
-
-            <div className="space-y-5">
+          <div className='contact_info mb-4'>
+            <div className="space-y-5 ">
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent mr-4">
                   <Mail size={20} />
                 </div>
                 <div>
-                  <p className="text-sm ">Email</p>
+                  <p className="text-sm text_social">Email</p>
                   <a href="mailto:hello@jhondoe.com" className="font-medium hover:text-accent transition-colors">
                     devgabrielezito@gmail.com
                   </a>
@@ -52,7 +41,7 @@ const Contact = () => {
                   <Phone size={20} />
                 </div>
                 <div>
-                  <p className="text-sm ">Phone</p>
+                  <p className="text-sm text_social">Phone</p>
                   <a href="tel:+15551234567" className="font-medium hover:text-accent transition-colors">
                     (+39) 329 436 9945
                   </a>

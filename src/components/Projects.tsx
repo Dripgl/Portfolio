@@ -4,23 +4,26 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from './ui/button.tsx';
 import { cn } from "../lib/utils.tsx";
 
+import SecondMdf from "../asset/Mdf/SecondMdf.png";
+import FirstSm from "../asset/Semete/FirstSm.png";
+
 
 const projects = [
   {
     id: 1,
-    title: 'E-commerce Dashboard',
+    title: 'MDF Incentives',
     description: 'A comprehensive dashboard for managing online stores with analytics and inventory tracking.',
-    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Recharts'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
-    slug: 'ecommerce-dashboard'
+    tags: ['React', 'TypeScript', 'Tailwind CSS'],
+    image: SecondMdf,
+    slug: 'MDF Incentives'
   },
   {
     id: 2,
-    title: 'Task Management App',
+    title: 'Se.Me.Te',
     description: 'A beautiful and intuitive task management application with drag-and-drop functionality.',
     tags: ['React', 'Redux', 'Node.js', 'MongoDB'],
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop',
-    slug: 'task-management'
+    image: FirstSm,
+    slug: 'semete'
   },
   {
     id: 3,
