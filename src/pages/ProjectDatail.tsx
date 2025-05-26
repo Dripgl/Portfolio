@@ -13,6 +13,10 @@ import FirstSm from "../asset/Semete/FirstSm.png";
 import SecondSm from "../asset/Semete/SecondSm.png";
 import ThirdSm from "../asset/Semete/ThirdSm.png";
 
+import Fanta from "../asset/Fanta/Fanta.png";
+import MacsOne from "../asset/Macs/MacsOne.png";
+import MacsFour from "../asset/Macs/MacsFour.png";
+import MacsTwo from "../asset/Macs/MacsTwo.png";
 
 interface Project {
   id: number;
@@ -48,7 +52,7 @@ const projectsData: Project[] = [
     challenge: 'The client needed a modern showcase site that reflected his elegance and luxury events and allowed him to increase his social media traffic to increase events',
     solution: 'I designed and developed with the Design Team, an structured site that we felt best reflected the client identity using the maximum budget ceiling requested at the first interview',
     result: 'The new site allowed the client to increase the publicity of her work and put her fantastic work within reach of everyone. With the new site, she increased traffic on her website by 40% in the first four months compared to what she had before.',
-    liveLink: 'https://www.mdfincentives.com/',
+    liveLink: 'https://mdf.semete.it/',
     repoLink: 'https://github.com/Dripgl/LuxuryEvents',
     slug: 'MDF Incentives'
   },
@@ -69,48 +73,47 @@ const projectsData: Project[] = [
     solution: 'I implemented React Beautiful DnD for the drag-and-drop interface, used Socket.io for real-time updates, and designed a responsive UI that adapts to different screen sizes while maintaining usability.',
     result: 'The application has garnered over 5,000 active users within the first three months, with a 4.8/5 rating on the app store. Users particularly appreciate the intuitive design and real-time synchronization features.',
     liveLink: 'https://example.com/task-manager',
-    repoLink: 'https://github.com/johndoe/task-manager',
+    repoLink: 'https://github.com/Dripgl/',
     slug: 'semete'
   },
   {
     id: 3,
-    title: 'Travel Companion',
-    description: 'A mobile-first application for travel enthusiasts with trip planning features.',
-    fullDescription: 'A comprehensive travel companion application that helps users plan trips, discover local attractions, track expenses, and share their experiences with friends and family.',
-    tags: ['React Native', 'GraphQL', 'Firebase'],
-    image: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=2031&auto=format&fit=crop',
+    title: 'ElysianCup',
+    description: 'A mobile-first application for private tournaments',
+    fullDescription: 'Creating a custom mobile app that emulates the logic of fantasy soccer but for private tournaments, making tournaments and games between friends more interesting while maintaining healthy competition',
+    tags: ['Android Studio', 'React', 'TypeScript', 'TailwindCss'],
+    image: Fanta,
     gallery: [
-      'https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=2031&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?q=80&w=1974&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?q=80&w=2070&auto=format&fit=crop',
+      Fanta,
+      Fanta
     ],
-    technologies: ['React Native', 'GraphQL', 'Apollo Client', 'Firebase', 'Google Maps API', 'Expo'],
-    challenge: 'Creating a travel app that works seamlessly offline while providing rich features like maps, itinerary planning, and photo sharing. Handling various data sources and APIs while maintaining performance was a significant challenge.',
-    solution: 'I developed a mobile-first application with offline-first architecture using Firebase for data synchronization, implemented efficient caching strategies with Apollo Client, and integrated Google Maps API for location features.',
-    result: 'The app has been featured in travel tech blogs and has achieved 20,000+ downloads. Users particularly value the offline capabilities and intuitive trip planning features.',
+    technologies: ['Android Studio', 'React-Native', 'TypeScript', 'TailwindCss', 'Expo'],
+    challenge: 'We needed an application that would allow us to keep scores and various data from our tournaments, so I decided to develop an application that emulated the game of fantasy soccer, but twisting the rules. Thus giving those who love soccer the chance to keep dreaming, being able to compete with their friends for the various prizes: Top scorer, best goalkeeper, best team, championship etc. from a simple Friday night game we are creating a solid reality that unites us all through a single passion',
+    solution: 'We got a very good result with the demo right away, however the project is still under development, once it is optimized I will upload some documentation about it',
+    result: 'we have already received 100 requests for the demo and more than 4 associations that organize tournaments are interested in our product',
     liveLink: 'https://example.com/travel-companion',
-    repoLink: 'https://github.com/johndoe/travel-companion',
-    slug: 'travel-companion'
+    repoLink: 'https://github.com/Dripgl/',
+    slug: 'FantaHero'
   },
   {
     id: 4,
-    title: 'Social Media Platform',
-    description: 'A modern social networking application with real-time messaging and news feed.',
-    fullDescription: 'A feature-rich social media platform that brings people together through real-time messaging, personalized news feeds, multimedia sharing, and interactive community features.',
-    tags: ['React', 'Socket.io', 'Express', 'MongoDB'],
-    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
+    title: 'Museum Site',
+    description: 'Remodel the site of a museum located in catania, following the mockups created by the client realizing her goal of perfect site',
+    fullDescription: '',
+    tags: ['React', 'Prime.React', 'Bootstrap'],
+    image: MacsTwo,
     gallery: [
-      'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1633439708729-aa5e3cc95418?q=80&w=1974&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1573152143286-0c422b4d2175?q=80&w=2070&auto=format&fit=crop',
+      MacsOne,
+      MacsFour,
+      MacsTwo
     ],
-    technologies: ['React', 'Socket.io', 'Express', 'MongoDB', 'AWS S3', 'WebRTC'],
-    challenge: 'Building a scalable social platform with real-time features that can handle high traffic and multimedia content. Managing user authentication, privacy controls, and content moderation presented significant technical challenges.',
-    solution: 'I designed a microservices architecture for scalability, implemented real-time features with Socket.io, and used AWS S3 for efficient media storage and delivery. I also developed a custom moderation system to maintain platform integrity.',
-    result: 'The platform has grown to 50,000+ active users with minimal performance issues. The real-time messaging system has been particularly successful, with users sending over 1 million messages daily.',
+    technologies: ['React', 'Prime.React', 'Bootstrap'],
+    challenge: 'Remodel the site of a museum located in catania, following the mockups created by the client realizing her goal of perfect site',
+    solution: 'I proposed alternatives and updates to the mockups created by the client, however, she preferred to continue with the one she had created and then possibly make these changes later. Right now the site is still under development, it was put on hold under the client request',
+    result: 'A more modern and attractive site than the previous one ',
     liveLink: 'https://example.com/social-platform',
-    repoLink: 'https://github.com/johndoe/social-platform',
-    slug: 'social-media'
+    repoLink: 'https://github.com/Dripgl/',
+    slug: 'macs'
   }
 ];
 

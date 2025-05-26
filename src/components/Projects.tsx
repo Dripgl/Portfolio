@@ -6,13 +6,15 @@ import { cn } from "../lib/utils.tsx";
 
 import SecondMdf from "../asset/Mdf/SecondMdf.png";
 import FirstSm from "../asset/Semete/FirstSm.png";
+import Fanta from "../asset/Fanta/Fanta.png";
+import MacsTwo from "../asset/Macs/MacsTwo.png";
 
 
 const projects = [
   {
     id: 1,
     title: 'MDF Incentives',
-    description: 'A comprehensive dashboard for managing online stores with analytics and inventory tracking.',
+    description: 'A simple, elegant and impactful showcase site',
     tags: ['React', 'TypeScript', 'Tailwind CSS'],
     image: SecondMdf,
     slug: 'MDF Incentives'
@@ -20,26 +22,26 @@ const projects = [
   {
     id: 2,
     title: 'Se.Me.Te',
-    description: 'A beautiful and intuitive task management application with drag-and-drop functionality.',
+    description: 'Professional, simple yet innovative corporate website',
     tags: ['React', 'Redux', 'Node.js', 'MongoDB'],
     image: FirstSm,
     slug: 'semete'
   },
   {
     id: 3,
-    title: 'Travel Companion',
-    description: 'A mobile-first application for travel enthusiasts with trip planning features.',
+    title: 'ElysianCup',
+    description: 'A customized app for private soccer tournaments',
     tags: ['React Native', 'GraphQL', 'Firebase'],
-    image: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=2031&auto=format&fit=crop',
-    slug: 'travel-companion'
+    image: Fanta,
+    slug: 'FantaHero'
   },
   {
     id: 4,
-    title: 'Social Media Platform',
-    description: 'A modern social networking application with real-time messaging and news feed.',
+    title: 'Museum Site',
+    description: 'restyling of a museum website following the client requests',
     tags: ['React', 'Socket.io', 'Express', 'MongoDB'],
-    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
-    slug: 'social-media'
+    image: MacsTwo,
+    slug: 'macs'
   }
 ];
 
@@ -80,7 +82,8 @@ const Projects = () => {
           </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Featured Projects</h2>
           <p className="text-lg max-w-2xl mx-auto text-description">
-            A selection of my recent work showcasing my skills and expertise in frontend development.
+            These are the projects that authorized me to upload in my website,
+            a selection of my recent work showcasing my skills and expertise in frontend development.
           </p>
         </div>
 
@@ -130,7 +133,7 @@ const Projects = () => {
         <div className="text-center">
           <Button variant="outline" size="lg" className="rounded-full px-10 border-2 border-black relative group overflow-clip transition-all hover:scale-up-center">
             <div className="bg-sample w-full h-full flex flex-row justify-center items-center">
-              <a href="/work">View All Projects</a> 
+              <a href="/work">View All Projects</a>
               <ArrowRight size={16} className="ml-2" />
             </div>
             <div className="transition-all ease-out bg-red-600 opacity-40 absolute w-[20px] h-[60px] -top-2 -skew-x-12 -translate-x-8 group-hover:translate-x-28"></div>

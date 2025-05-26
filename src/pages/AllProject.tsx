@@ -4,46 +4,52 @@ import { ArrowRight, Send } from 'lucide-react';
 import { Button } from '../components/ui/button.tsx';
 import { cn } from "../lib/utils.tsx";
 
+import Coming from "../asset/Coming.png";
+import Fanta from "../asset/Fanta/Fanta.png";
+import SecondMdf from "../asset/Mdf/SecondMdf.png";
+import FirstSm from "../asset/Semete/FirstSm.png";
+import MacsTwo from "../asset/Macs/MacsTwo.png";
+
 
 const projects = [
   {
     id: 1,
-    title: 'E-commerce Dashboard',
-    description: 'A comprehensive dashboard for managing online stores with analytics and inventory tracking.',
-    tags: ['React', 'TypeScript', 'Tailwind CSS', 'Recharts'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
-    slug: 'ecommerce-dashboard'
+    title: 'MDF Incentives',
+    description: 'A simple, elegant and impactful showcase site',
+    tags: ['React', 'TypeScript', 'Tailwind CSS'],
+    image: SecondMdf,
+    slug: 'MDF Incentives'
   },
   {
     id: 2,
-    title: 'Task Management App',
-    description: 'A beautiful and intuitive task management application with drag-and-drop functionality.',
+    title: 'Se.Me.Te',
+    description: 'Professional, simple yet innovative corporate website',
     tags: ['React', 'Redux', 'Node.js', 'MongoDB'],
-    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop',
-    slug: 'task-management'
+    image: FirstSm,
+    slug: 'semete'
   },
   {
     id: 3,
-    title: 'Travel Companion',
-    description: 'A mobile-first application for travel enthusiasts with trip planning features.',
+    title: 'ElysianCup',
+    description: 'A customized app for private soccer tournaments',
     tags: ['React Native', 'GraphQL', 'Firebase'],
-    image: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?q=80&w=2031&auto=format&fit=crop',
-    slug: 'travel-companion'
+    image: Fanta,
+    slug: 'FantaHero'
   },
   {
     id: 4,
-    title: 'Social Media Platform',
-    description: 'A modern social networking application with real-time messaging and news feed.',
-    tags: ['React', 'Socket.io', 'Express', 'MongoDB'],
-    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
-    slug: 'social-media'
+    title: 'Museum Site',
+    description: 'restyling of a museum website following the client requests',
+    tags: ['React', 'Prime.React', 'Bootstrap'],
+    image: MacsTwo,
+    slug: 'macs'
   },
   {
     id: 5,
     title: 'Social Media Platform',
     description: 'A modern social networking application with real-time messaging and news feed.',
     tags: ['React', 'Socket.io', 'Express', 'MongoDB'],
-    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
+    image: Coming,
     slug: 'social-media'
   },
   {
@@ -51,7 +57,7 @@ const projects = [
     title: 'Social Media Platform',
     description: 'A modern social networking application with real-time messaging and news feed.',
     tags: ['React', 'Socket.io', 'Express', 'MongoDB'],
-    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
+    image: Coming,
     slug: 'social-media'
   }
 ];
@@ -143,7 +149,7 @@ const AllProjects = () => {
         <div className="text-center">
           <Button variant="outline" size="lg" className="rounded-full px-10 border-2 border-black relative group overflow-clip transition-all hover:scale-up-center">
             <div className="bg-sample w-full h-full flex flex-row justify-center items-center">
-              <a href="/contact">Send a Message</a> 
+              <a href="/contact">Send a Message</a>
               <Send size={20} className="ml-2" />
             </div>
             <div className="transition-all ease-out bg-red-600 opacity-40 absolute w-[20px] h-[60px] -top-2 -skew-x-12 -translate-x-8 group-hover:translate-x-28"></div>
